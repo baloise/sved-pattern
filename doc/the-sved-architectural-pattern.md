@@ -1,5 +1,8 @@
 # SVED architectural pattern
-In an API-Management context the SVED Architectural pattern helps to reliably process incoming requests. SVED stands for 
+Lets suppose you're an API provider, and you expect requests, which either lead to complex internal processing or the response is of high relevance to the caller.
+How would you process such a request?
+
+Here the SVED Architectural pattern might helps to solve your challenges. SVED stands for 
 * **Store** - persist the request for operational process and further usage
 * **Validate** - ensure that the request conforms to the API-Spec - provide early feedback to the caller
 * **Enhance** - give the request all the additional data which is required for further processing. The caller might not know all internals of your company
